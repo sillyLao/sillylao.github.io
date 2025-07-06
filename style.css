@@ -37,7 +37,8 @@ iframe {
     align-items: center;
 }
 
-.div-header img {   
+
+.div-header img:hover {   
     animation-name: img-spin;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -51,7 +52,7 @@ iframe {
     margin: 0 20px;
     text-decoration: none;
 }
-.div-header > :link {
+.div-header > a:link {
     color:rgb(135, 219, 241);
     animation-name: a-normal;
     animation-duration: 1s;
