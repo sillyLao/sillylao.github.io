@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: rgb(214, 146, 230);
+    align-items: center;
+    font:
+        1.2rem "Fira Sans",
+        sans-serif;
+}
+
+header {
+    background-color: rgb(156, 84, 165);
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: rgb(156, 84, 165);
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+main {
+    margin: 0 3rem 0 3rem
+}
+
+div, iframe {
+    margin: 0 auto;
+}
+
+iframe {
+    display: block;
+    padding: 5px;
+}
+
+.div-header {
+    display: flex;
+    align-items: center;
+}
+
+.div-header img {   
+    animation-name: img-spin;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes img-spin {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+
+.div-header > a {
+    margin: 0 20px;
+    text-decoration: none;
+}
+.div-header > :link {
+    color:rgb(135, 219, 241);
+    animation-name: a-normal;
+    animation-duration: 1s;
+}
+.div-header > a:visited {
+    color:rgb(135, 219, 241);
+    animation-name: a-normal;
+    animation-duration: 1s;
+}
+.div-header > a:hover {
+    color: rgb(106, 41, 64);
+    animation-name: a-hover;
+    animation-duration: 1s;
+}
+@keyframes a-normal {
+    from {color: rgb(106, 41, 64)}
+    to {color: rgb(135, 219, 241)}
+}
+@keyframes a-hover {
+    from {color: rgb(135, 219, 241)}
+    to {color: rgb(106, 41, 64)}
+}
+.badges img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+}
